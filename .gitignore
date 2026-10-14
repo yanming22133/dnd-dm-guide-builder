@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.html
+!examples/*.html
+*_extract/
+*.png
+!docs/*.png
+.DS_Store
