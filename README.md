@@ -82,6 +82,20 @@ dnd-dm-guide-builder/
 - **Numbers complete.** DC, dice, gold, HP, distance — there's no time to compute at the table.
 - **Spoiler safety.** The DM guide is never handed to players; produce a separate player Markdown handout.
 
+## Legal / attribution
+
+- **This repository contains only original tooling and original placeholder examples.**
+  It ships **no adventure text, no maps and no module data** from any published product.
+- Adventure modules, their boxed read-aloud text, maps and plot are **copyrighted by their
+  publishers** (e.g. Wizards of the Coast). Do **not** publish module content — including
+  fan translations — even if you only re-word it. Generated guides and data packages belong
+  in a **private** repo (or your own machine), not here.
+- **SRD content** (D&D 5e SRD 5.1) is released by Wizards of the Coast under
+  [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/), so SRD stat blocks may be reused
+  **with attribution**. Adventure-specific monsters, NPCs and locations are *not* SRD.
+- Using a module to run your own table, and keeping private notes, is a normal personal use.
+  The line is **public distribution** of the publisher's content.
+
 ## License
 
 MIT

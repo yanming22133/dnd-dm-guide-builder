@@ -4,10 +4,10 @@
 `build_guide.py` 读取它并渲染 HTML。**只有 `TITLE` 和 `CHAPTERS` 是必需的**，其余缺省会被跳过。
 
 ```python
-TITLE   = "凡达林的失落矿坑 · DM 速查"   # 页面主标题
-SUBTITLE= "克拉摩堡 · 雷树废墟 · 潮音洞穴"
-SCOPE   = "对应模组 PDF 第 28–46 页"
-VERSION = "v2026-10-14 · 首版"           # 显示在标题旁的版本徽章
+TITLE   = "我的战役 · DM 速查"           # 页面主标题
+SUBTITLE= "第一章 · 旧矿地城"
+SCOPE   = "对应模组 PDF 第 1–10 页"
+VERSION = "v1.0 · 首版"                   # 显示在标题旁的版本徽章
 ```
 
 ---
@@ -17,12 +17,12 @@ VERSION = "v2026-10-14 · 首版"           # 显示在标题旁的版本徽章
 ```python
 CHAPTERS = [
   {
-    "id":   "castle",          # 必需：锚点前缀，区域 id 会变成 castle-1, castle-2 …
-    "title":"第 3 部分 · 克拉摩堡",
-    "en":   "Cragmaw Castle",
-    "page": "模组 PDF 第 33–38 页",
-    "nav":  "🏰 克拉摩堡",      # 可选：左侧导航显示的文字
-    "maps": ["castle"],        # 可选：本章要挂哪张地图（对应 MAPS 的 key）
+    "id":   "dungeon",         # 必需：锚点前缀，区域 id 会变成 dungeon-1, dungeon-2 …
+    "title":"第一章 · 旧矿地城",
+    "en":   "The Old Mine",
+    "page": "模组 PDF 第 1–10 页",
+    "nav":  "⛏️ 旧矿地城",      # 可选：左侧导航显示的文字
+    "maps": ["dungeon"],       # 可选：本章要挂哪张地图（对应 MAPS 的 key）
 
     # 概览区（可选，但强烈建议）
     "intro":     ["背景段 1", "背景段 2"],
@@ -46,9 +46,9 @@ CHAPTERS = [
 
 ```python
 {
-  "no":   "8",                       # 必需：区域编号（显示为「区域 8」）
-  "name": "黑暗大厅",
-  "en":   "Dark Hall",
+  "no":   "4",                       # 必需：区域编号（显示为「区域 4」）
+  "name": "破败的哨塔",
+  "en":   "Ruined Watchtower",
 
   "read":   "念给玩家的原文（书上的 boxed text）",
   "read2":  "同一区域的第二段念白（可选）",
@@ -110,7 +110,7 @@ NPC_RULES = {"title": "谈判通用法则", "items": ["规则 1", "规则 2"]}
 
 NPCS = [
   {
-    "name": "格罗尔王", "en": "King Grol", "where": "克拉摩堡 · 区域14",
+    "name": "地精头目", "en": "Goblin Boss", "where": "旧矿地城 · 区域3",
     "role": "熊地精酋长（45 HP）", "monster": "bugbear",   # 可选，挂到图鉴
     "voice":   "语气 / 举止",
     "wants":   "想要什么",
@@ -129,8 +129,8 @@ NPCS = [
 
 ```python
 MAPS = [
-  {"key": "castle", "title": "克拉摩堡 地图", "en": "Cragmaw Castle",
-   "src": "maps/p34_0.png",          # 相对数据包目录，或绝对路径
+  {"key": "dungeon", "title": "地城 地图", "en": "The Dungeon",
+   "src": "maps/dungeon.png",         # 相对数据包目录，或绝对路径
    "scale": "1 格 = 5 尺",
    "note": "红圈数字对应区域编号。"},
 ]
